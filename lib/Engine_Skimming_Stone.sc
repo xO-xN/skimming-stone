@@ -16,7 +16,7 @@ Engine_Skimming_Stone : CroneEngine {
 			snd = BLowShelf.ar(snd, 280, 0.8, 0.3 - \stone.kr(0) * 12);
 			snd = snd.tanh;
 			snd = Balance2.ar(snd[0], snd[1], \pan.kr(0));
-			snd = snd * -6.dbamp;
+			snd = snd * -9.dbamp;
 			Out.ar(0, snd);
 		}).add;
 
@@ -32,7 +32,7 @@ Engine_Skimming_Stone : CroneEngine {
 			snd = BLowShelf.ar(snd, 280, 0.8, 0.3 - \stone.kr(0) * 12);
 			snd = snd.tanh;
 			snd = Balance2.ar(snd[0], snd[1], \pan.kr(0));
-			snd = snd * -6.dbamp;
+			snd = snd * -9.dbamp;
 			Out.ar(0, snd);
 		}).add;
 
@@ -47,7 +47,7 @@ Engine_Skimming_Stone : CroneEngine {
 			snd = BLowShelf.ar(snd, 280, 0.8, 0.3 - \stone.kr(0) * 12);
 			snd = snd.tanh;
 			snd = Balance2.ar(snd[0], snd[1], \pan.kr(0));
-			snd = snd * -6.dbamp;
+			snd = snd * -9.dbamp;
 			Out.ar(0, snd);
 		}).add;
 
@@ -64,7 +64,7 @@ Engine_Skimming_Stone : CroneEngine {
 			snd = BLowShelf.ar(snd, 280, 0.8, 0.3 - \stone.kr(0) * 12);
 			snd = snd.tanh;
 			snd = Balance2.ar(snd[0], snd[1], \pan.kr(0));
-			snd = snd * -6.dbamp;
+			snd = snd * -9.dbamp;
 			Out.ar(0, snd);
 		}).add;
 
@@ -82,7 +82,7 @@ Engine_Skimming_Stone : CroneEngine {
 			snd = snd.tanh;
 			snd = snd * Env.perc(0.001, \rls.kr(0.8), exprand(0.8, 1)).ar(Done.freeSelf);
 			snd = Balance2.ar(snd[0], snd[1], \pan.kr(0));
-			snd = snd * -6.dbamp;
+			snd = snd * -9.dbamp;
 			Out.ar(0, snd);
 		}).add;
 
@@ -96,7 +96,7 @@ Engine_Skimming_Stone : CroneEngine {
 			snd = BLowShelf.ar(snd, 100, 1, 0.3 - \stone.kr(0) * 2);
 			snd = snd.tanh;
 			snd = Balance2.ar(snd[0], snd[1], \pan.kr(0));
-			snd = snd * -6.dbamp;
+			snd = snd * -9.dbamp;
 			Out.ar(0, snd)
 		}).add;
 
@@ -107,7 +107,7 @@ Engine_Skimming_Stone : CroneEngine {
 			snd = snd * Env.perc(\atk.kr(0.01), \rls.kr(0.12)).ar(Done.freeSelf);
 			snd = Pan2.ar(snd, \pan.kr(0));
 			snd = snd.tanh;
-			snd = snd * -6.dbamp;
+			snd = snd * -9.dbamp;
 			Out.ar(0, snd);
 		}).add;
 

@@ -650,7 +650,7 @@ function find_char(char)
 end
 
 function change_chord()
-    start_note = 50 + math.random(6)*2 - math.random(6)
+    start_note = 50 + math.random(7)*2 - math.random(5)
     if math.random(3) == 1 then
         chord = chord_lib[math.random(#chord_lib)]
     end
