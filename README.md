@@ -2,7 +2,7 @@
 
 A norns' script specifically for typing keyboard. 
 
-There is a demonstrate video (in Mandarin) on bilibili: 【合成器Skimming Stone与小品 为norns和打字键盘而作 24年01月】 https://www.bilibili.com/video/BV1Bk4y1Z7EY/?share_source=copy_web&vd_source=690420747b4b949d522a1c624e2162f1
+Demonstration video (in Mandarin) on bilibili: 【合成器Skimming Stone与小品 为norns和打字键盘而作 24年01月】 https://www.bilibili.com/video/BV1Bk4y1Z7EY/?share_source=copy_web&vd_source=690420747b4b949d522a1c624e2162f1
 
 You can download and install this script on your norns manually by following this: https://monome.org/docs/norns/maiden/#manual
 
@@ -12,15 +12,15 @@ You can download and install this script on your norns manually by following thi
 ## Update
 
 V0.8.0
-new: add tone preset
-new: Enc.1 to change tone preset on stone mode
+new: add tone preset; 
+new: Enc.1 to change tone preset on stone mode; 
 
-fix: clean up the script
-fix: minor tweak sound engine
+fix: clean up the script; 
+fix: minor tweak sound engine. 
 
 
 ## Future Plan
 
-1. make SynthDefs sounds better
-2. polyphonic synth
-3. Reverb and Limiter SynthDefs
+1. make SynthDefs sounds better; 
+2. polyphonic synth; 
+3. Reverb and Limiter SynthDefs; 
