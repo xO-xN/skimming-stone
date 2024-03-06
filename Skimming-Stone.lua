@@ -33,8 +33,7 @@ function init()
     stone_trans = 0.37
     tog_add = false
 
-    presets_count = #keymap.types
-    params:add_number("preset", "Stone type", 1, presets_count, 1)
+    params:add_option("preset", "Stone type", keymap.types, 1)
     current_keymap_name = keymap.types[params:get("preset")]
     current_keymap = keymap[current_keymap_name]
     redraw()
@@ -51,10 +50,10 @@ function redraw()
     screen.move(9, 19)
     screen.text("Stone")
     --screen.level(1)
-    screen.move(98, 12)
-    screen.text("type")
-    screen.move(93, 19)
-    screen.text(current_keymap_name)
+    screen.move(110, 12)
+    screen.text_center("type")
+    screen.move(110, 19)
+    screen.text_center(current_keymap_name)
 
 
     if #words == 0 then
@@ -194,7 +193,10 @@ function keyboard.event(type, code, val)
     --local menu = norns.menu.status()
     -- ' '
     if val == 1 then
+
         local key = keycodes.soundkeys[code]
+        current_keymap_name = keymap.types[params:get("preset")]
+        current_keymap = keymap[current_keymap_name]
 
         -- blankspace change chord
         if (code == hid.codes.KEY_SPACE) then
